@@ -19,7 +19,6 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 // 2 : session code
-
 // 3 view code
 app.set('views', 'views');
 app.set('view engine', 'ejs');
@@ -41,3 +40,9 @@ server.listen(PORT, function(){
 })
 
 // comment
+
+
+
+
+
+

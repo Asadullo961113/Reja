@@ -25,8 +25,8 @@
     display: flex;
     flex-direction: column;
     }
-.main_frame .midd_frame {
-    position: absolute;
+.main_frame .mid_frame {
+    position: relative;
     width: 970px;
     height: 1359px;
     margin-left: 30px;
@@ -35,6 +35,7 @@
     flex-direction: column;
     gap: 100px;
     height: 454.33px;
+    background-color: white;
     }
 
 .main_frame .left_container_1 {
@@ -330,9 +331,10 @@
 /* =================================================================================================== */
 /* =================================================================================================== */
 
- .main_frame .midd_frame_1 {
+.main_frame .midd_frame {
     position: absolute;
     width: 970px;
+    /* height: 1359px; */
     margin-left: 30px;
     margin-right: 27px;
     display: flex;
@@ -340,6 +342,7 @@
     gap: 100px;
     height: 454.33px;
     background-color: white;
+    /* Background Image */
     height: 454.33px;
     left: 300px;
     right: -339px;
@@ -348,7 +351,7 @@
 
   }
   
-  #midd_frame_1_1 {
+  #midd_frame {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -373,87 +376,21 @@
   .springkle4 {
     position: absolute;
     left: 404px;
-    right: 339px;
-    top: 300px;
+    right: -339px;
+  
+    bottom: 100px;
   }
   .springkle5 {
     position: absolute;
-    left: 490.55px;
+    left: 355.55px;
     top: 62.26px;
   }
   .springkle6 {
     position: absolute;
     left: 885.55px;
     top: 62.26px;
-  } 
-  .springkle7 {
-    position: absolute;
-    left: 500.55px;
-    top: 390.26px;
   }
-  .midd_frame_2_2{
-    position: absolute;
-    display: flex;
-    width: 326.06px;
-    height: 446.06px;
-    left: 583.3px;
-    right: 61.65px;
-    top: 16.46px;
 
-  }
-  .midd_frame_3_3{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    left: 70px;
-    bottom: 35px;
-  }
-  .tugma{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width: 154px;
-    height: 51px;
-    border: none;
-    outline: none;
-    background-color: rgb(255, 180, 0);
-    justify-content: center;
-    align-items: center;
-    padding: 16px 32px 16px 32px;
-    border-radius: 5px;
-  }
-  .midd_frame_2{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    top: 550px;
-    left: 300px;
-  }
-  .midd_frame_3{
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    left: 15px;
-    top: 750px;
-    gap: 30px;
-  }
-  .container{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    top: 3;
-    left: 300px;
-    width: 220px;
-    height: 230px;
-    background: rgb(255, 255, 255);
-    padding-top: 20px;
-  }
 
   /* RIGHT FRAME */
 
@@ -489,3 +426,72 @@
     width: 40px;
   }
 
+.myservice-container {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+.myservice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    width: 250px;
+    height: 225px;
+    background: rgb(255, 255, 255);
+    padding-top: 20px;
+  }
+
+.wrapper {
+    width: 499.51px;
+    height: 216.74px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+.wrapper button {
+    width: 154px;
+    height: 51px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px 16px 32px;
+    border-radius: 5px;
+    /* Yellow */
+    background: rgb(255, 180, 0);
+    outline: none;
+    border: none;
+  }
+.services {
+    margin-bottom: 30px;
+    /* width: 260px; */
+  }
+  
+.services h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+.services_to_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 225px;
+    /* background: rgb(255, 255, 255); */
+    padding-top: 5px;
+    /* width: 899.51px;
+    height: 216.74px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px; */
+}
