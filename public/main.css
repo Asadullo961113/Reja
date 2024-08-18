@@ -445,14 +445,16 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /* align-items: center; */
+    gap: 8px;
     align-items: center;
-    top: 3;
+    top: 3px;
     left: 300px;
     width: 220px;
     height: 230px;
     background: rgb(255, 255, 255);
     padding-top: 20px;
+    padding-bottom: 10px;
   }
 
   /* RIGHT FRAME */
