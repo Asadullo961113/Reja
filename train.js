@@ -3,7 +3,7 @@
 // Shunday, function tuzingki, bu function yagona parametrga ega bo'lib
 // string tarkibidagi sonlar miqdorini qaytarsin
 
-// Masalan: countDigits("ad2a54y79wet0sfgb9")
+// Masalan: countDigits("ad2a4y9wet0sfgb983")
 // Yoqoridagi string tarkibida 7 dona raqam qatnashganligi uchun, natija 7 qaytadi
 
 
