@@ -28,13 +28,31 @@ app.set('view engine', 'ejs');
 
 // 4 routing code
 app.post("/create-item", (req, res) => {
+    console.log(req.body);
+    const new_reja = req.body.reja;
+    db.collection("plans").insertOne({reja:new_reja}, (err,data) => {
+        if(err){
+            console.log(err)
+            res.end("something went wrong");
+        } else {
+            res.end("saccessfully added");
+        }
+    });
     // TODO
 })
 app.get('/author', (req, res) => {
     res.render("author",{user: user} );
 })
 app.get("/", function(req, res) {
-    res.render("reja");
+    db.collection("plans").find().toArray((err,data) =>{
+        if(err) {
+            console.log(err);
+            res.end("something went wrong");
+        } else {
+            console.log(data);
+            res.render("reja", {items: data});
+        }
+    });
 });
 
 module.exports = app;

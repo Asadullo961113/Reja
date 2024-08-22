@@ -18,12 +18,23 @@
       <div class="jumbotron p-3 shadow-sm">
           <form id="create-form" action="/create-item" method="POST">
               <div class="d-flex align-items-center">
-                  <input type="text" style="flex: 1; margin-right: 10px;" id="create-field" name="plan" autofocus
+                  <input type="text" style="flex: 1; margin-right: 10px;" id="create-field" name="reja" autofocus
                       autocomplete="off" class="form-control mr-3" />
                   <button class="btn btn-primary" style="border-radius: 10px;">Yangi reja qo'shish</button>
               </div>
           </form>
       </div>
+      <ul id="item-list" class="list-group pb-5">
+        <% items.map(function(item) { %>
+            <li style="margin-bottom: 4px;" class="list-group-item list-group-item-info align-items-center d-flex justify-content-between">
+                <span class="item-text"><%= item.reja %></span>
+                <div>
+                    <button data-id="<%= item._id %>" class="edit-me btn btn-secondary" style="border-radius: 4px; margin-top: 10px; padding: 2px 10px 2px 10px">Edit</button>
+                    <button data-id="<%= item._id %>" class="delete-me btn btn-danger" style="border-radius: 4px; margin-top: 10px; padding: 2px 10px 2px 10px">Delete</button>
+                </div>
+            </li>
+        <% }) %>
+    </ul>
       <button id="delete-all" class="btn btn-danger" style="border-radius: 4px; margin-top: 10px;">Hamma Rejalarni O'chirish</button>
   </div>
   </body>
