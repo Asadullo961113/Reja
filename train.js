@@ -1,10 +1,32 @@
+// MIT 18 TASK B
+
+// Shunday, function tuzingki, bu function yagona parametrga ega bo'lib
+// string tarkibidagi sonlar miqdorini qaytarsin
+
+// Masalan: countDigits("ad2a54y79wet0sfgb9")
+// Yoqoridagi string tarkibida 7 dona raqam qatnashganligi uchun, natija 7 qaytadi
+
+
+function countDigits(a) {
+    let count = 0;
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] >= '0' && a[i] <= '9') {
+            count++;
+        }
+    } 
+    return count;
+}
+// Misol uchun
+console.log(countDigits("ad2a4y9wet0sfgb983")); // javob: 7
+
+
 // callback function lar
 // const list = ['0 dan 12 yoshgacha chipta narhi 3000 ming',
 //               '12 dan 18 yoshgacha chipta narhi 5000 ming',
 //               '18 dan 22 yoshgacha chipta narhi 8000 ming',
 //               '22 dan kattalarga chipta narhi 10000 ming'];
 
-const { resolveInclude } = require("ejs");
+// const { resolveInclude } = require("ejs");
 
 // function yosh(a,callback){
 //      if(typeof a !== 'number') callback("insert number", null);
@@ -72,17 +94,17 @@ const { resolveInclude } = require("ejs");
  MASALAN countLetter("e", "engineer") 3ni return qiladi.*/
 
 // masalani yechimi
-function countLetter(a, b) {
-    let  count = 0;
-    for(let i = 0;i<b.length; i ++ ){
-        if(b[i] === a){
-            count++;
-        }  
+// function countLetter(a, b) {
+//     let  count = 0;
+//     for(let i = 0;i<b.length; i ++ ){
+//         if(b[i] === a){
+//             count++;
+//         }  
 
-    };
-    return count;     
-};
-console.log(countLetter("l", "asadulloh")); // javob 2
+//     };
+//     return count;     
+// };
+// console.log(countLetter("l", "asadulloh")); // javob 2
 
 
 
