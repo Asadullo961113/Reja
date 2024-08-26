@@ -10,7 +10,7 @@ function Letter(a,b) {
     s = a.split('').sort();
     f = b.split('').sort();
     
-    return s.join('') == f.join('');
+    return s.join('') === f.join('');
 };
 console.log(Letter("busan","nsabu")); // true
 console.log(Letter("aka","opa")); // false
