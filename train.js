@@ -1,3 +1,22 @@
+/*MIT 18 TASK-D: 
+
+Shunday function tuzing, u 2ta string parametr ega bolsin, 
+hamda agar har ikkala string bir hil harflardan iborat bolsa
+true aks holda false qaytarsin
+MASALAN: 
+checkContent("mitgroup", "gmtiprou") return qiladi true;*/
+
+function Letter(a,b) {
+    s = a.split('').sort();
+    f = b.split('').sort();
+    
+    return s.join('') == f.join('');
+};
+console.log(Letter("busan","nsabu")); // true
+console.log(Letter("aka","opa")); // false
+
+
+
 // MIT 14 TASK-C
 
 // Shop nomli class tuzing, va bu class 3 xill parametr qabul qilsin.
