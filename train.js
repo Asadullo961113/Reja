@@ -1,3 +1,17 @@
+// MIT 18 TASK-E:
+
+/*Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+
+MASALAN: getReverse("hello") return qilsin "olleh"*/
+
+function teskari(a){
+    b = a.split('').reverse().join('');
+    return b;
+  }
+  console.log(teskari("salom")); // molas
+
+
+
 /*MIT 18 TASK-D: 
 
 Shunday function tuzing, u 2ta string parametr ega bolsin, 
@@ -6,14 +20,14 @@ true aks holda false qaytarsin
 MASALAN: 
 checkContent("mitgroup", "gmtiprou") return qiladi true;*/
 
-function Letter(a,b) {
-    s = a.split('').sort();
-    f = b.split('').sort();
+// function Letter(a,b) {
+//     s = a.split('').sort();
+//     f = b.split('').sort();
     
-    return s.join('') === f.join('');
-};
-console.log(Letter("busan","nsabu")); // true
-console.log(Letter("aka","opa")); // false
+//     return s.join('') === f.join('');
+// };
+// console.log(Letter("busan","nsabu")); // true
+// console.log(Letter("aka","opa")); // false
 
 
 
