@@ -1,14 +1,38 @@
+// MIT 18 TASK F
+// Yagona string argumentga ega findDoublers nomli function tuzing
+// Agar stringda bittadan ortiq bir xil harflar ishtirok etgan bo'lsa
+// true yokida false natija qaytarsin.
+
+function findDouble(a) {
+  let b = a.split('');
+  let seen = [];
+
+  for (let i = 0; i < b.length; i++) {
+    let s = b[i];
+    if (seen.includes(s)) {
+      return true; 
+    }
+    seen.push(s);
+  }
+
+  return false; 
+}
+
+console.log(findDouble("hello")); // true
+console.log(findDouble("helo"));  // false
+
+
 // MIT 18 TASK-E:
 
 /*Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
 
 MASALAN: getReverse("hello") return qilsin "olleh"*/
 
-function teskari(a){
-    b = a.split('').reverse().join('');
-    return b;
-  }
-  console.log(teskari("salom")); // molas
+// function teskari(a){
+//     b = a.split('').reverse().join('');
+//     return b;
+//   }
+//   console.log(teskari("salom")); // molas
 
 
 
